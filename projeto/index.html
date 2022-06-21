@@ -5,7 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width= device-width,inital-scale=1.0">
 		<title>index</title>
-	<link rel ="stylesheet" href="res//bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#FF0000;">
@@ -24,9 +25,95 @@
 		</div>
 	</nav>
 	
-	<script type="text/javascript" src="res/bootstrap/js/bootstrap.min.js"></script>
+	<div class="carousel slide" data-bs-ride="carousel" id="meuCarousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide1"> </button>
+			<button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="1" aria-current="true" aria-label="slide1"> </button>
+			<button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="2" aria-current="true" aria-label="slide1"> </button>
+		</div>
 	
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/flamengo.png" class="d-block w-100" style="max-height: 500px;">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>primeiro slide</h5>
+					<p>apenas uma descrição para a imagem</p>
+				</div>
+				
+			</div>	
+			<div class="carousel-item">				
+				<img src="img/flamengoimagem2.jpg" class="d-block w-100" style="max-height: 500px;">
+				<div class="carousel-caption d-none d-md-block">
+					<h6>segundo slide</h6>
+					<p>apenas uma descrição para a imagem</p>
+				</div>
+			</div>
+			<div class="carousel-item ">
+				<img src="img/simbolodoflamengo2.jpeg" class="d-block w-100" style="max-height: 500px;">
+				<div class="carousel-caption d-none d-md-block">
+					<h6>terceiro slide</h6>
+					<p>apenas uma descrição para a imagem</p>		
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#meuCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">voltar</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#meuCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">avançar</span>
+			</button>
+		</div>	
+
+	</div>
 	
+<section id="cards">
+	<div class="container">
+		<div class="row">
+				<div class="col-3">
+					<div class="card">
+						<img src="img/arrascaeta.webp" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">arrascaeta</h5>
+							<p class="card-text">melhor camisa 10</p>
+							<a href="#" class="btn btn-primary">clique aqui</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">	
+					<div class="card">
+						<img src="img/gabigol.webp" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">gabigol</h5>
+							<p class="card-text">melhor centroavante do brasil</p>
+							<a href="#" class="btn btn-primary">clique aqui</a>
+						</div>
+					</div>
+				</div>
+			<div class="col-3">
+					<div class="card">
+						<img src="img/brunohenrique.webp" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">bruno henrique</h5>
+							<p class="card-text">melhor velocista do brasil</p>
+							<a href="#" class="btn btn-primary">clique aqui</a>
+						</div>
+					</div>
+			</div>
+				<div class="col-3">
+					<div class="card">
+						<img src="img/evertoncebolinha.png" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">cebolinha</h5>
+							<p class="card-text">melhor ponta esquerda do brasil</p>
+							<a href="#" class="btn btn-primary">clique aqui</a>
+						</div>
+					</div>										
+				</div>
+		</div>
+	</div>
+</section>
+	
+	<script type="text/javascript" src="res/bootstrap/js/bootstrap.min.js"></script>	
 </body>
 </head>
-	
