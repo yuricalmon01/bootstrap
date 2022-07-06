@@ -1,4 +1,63 @@
+body{
+	background-image: url(../img/flamengologo2.webp);
+	color: white;
+}
 #cards{
-margin-top: 25px;
+	margin-top: 25px;
+	margin-top: 2%;
+}
+
+.editar-card{
+	background-color: #FF0000
+ 	padding: 5%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+#imagem-card-1{
+	background-color: #FF0000;		
+		
+		
+		
+}
+#imagem-card-2{
+	background-color: #FF0000;	
+		
+}
+
+
+
+#imagem-card-3{
+	background-color: #FF0000;
+		
+
+
+
+
+}
+#imagem-card-4{
+	background-color: #FF0000;
+
+	
+}	
+.efeito-card{
+	transition: transform 1s;	
+		
+		
+		
+		
+		
+		
+		
+}
+.efeito-img{
+	transition: transform 1s;
 	
 }
+.efeito-img:hover{
+	transform: scale(1.2) rotateX(360deg);	
+	cursor: pointer;	
+		
+		
+			
+}	
+	align-self-center
