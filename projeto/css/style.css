@@ -5,6 +5,7 @@ body{
 #cards{
 	margin-top: 25px;
 	margin-top: 2%;
+	color: red;
 }
 
 .editar-card{
@@ -15,20 +16,20 @@ body{
 }
 #imagem-card-1{
 	background-color: #FF0000;		
-		
+	color:#FF0000;	
 		
 		
 }
 #imagem-card-2{
 	background-color: #FF0000;	
-		
+	color:#FF0000;	
 }
 
 
 
 #imagem-card-3{
 	background-color: #FF0000;
-		
+	color:#FF0000;	
 
 
 
@@ -36,7 +37,7 @@ body{
 }
 #imagem-card-4{
 	background-color: #FF0000;
-
+	color:#FF0000;
 	
 }	
 .efeito-card{
@@ -48,6 +49,14 @@ body{
 		
 		
 		
+}
+#rodape{
+	margin-top: 20px;
+	size: 100px;
+	background-color: white;
+	color: red;
+	}	
+
 }
 .efeito-img{
 	transition: transform 1s;
