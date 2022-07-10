@@ -6,6 +6,22 @@
 	<meta name="viewport" content="width= device-width,inital-scale=1.0">
 		<title>Contatos</title>
 	<link rel ="stylesheet" href="res//bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#rodape{
+		margin-top: 555px;
+		size: 100px;
+		margin-bottom: auto;
+		
+		}
+		input{
+		max-width: 350px;
+		}
+		button{
+		margin-top: 50px;
+		}
+	
+	</style>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#FF0000;">
@@ -19,10 +35,129 @@
 					<a  class="nav-link" href="sobre.html">sobre</a>
 					<a  class="nav-link active" href="contatos.html">contatos</a>
 					<a  class="nav-link" href="noticias.html">noticias</a>
+					<a class="nav-link" href="login.html">Login</a>
+					<a class="nav-link" href="cadastro.html">Cadastro</a>
 				</div>
 			</div>	
 		</div>
 	</nav>
+	<form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		</div>
+		</div>
+	</nav>
+	<section id="fale-conosco" style="color: white" >
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="display-5"> FALE CONOSCO </h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<form>
+						<label for="nome-completo" class="form-label" style="color: white"> Digite o seu nome: </label>
+						<p class="form-text" style="color: white"> Digite seu nome completo neste campo </p>
+						<input type="text" class="form-control" id="nome-completo" placeholder="Nome" required>
+						<br/>
+						<label for="email" class="form-label" style="color: white"> Digite o seu email: </label>
+						<p class="form-text" style="color: white"> Digite seu email neste campo </p>
+						<input type="email" class="form-control">
+						<br/>
+						<label for="telefone"  class="control-label" style="color: white">Digite o seu telefone: </label>
+						<input type="text" class="form-control" id="inputFone" placeholder="(00)00000-0000" required maxlength="15" >
+						<br/>		
+						<label for="estado" class="form-label"> Digite o seu estado </label>
+						<select name="estado" class="form-select" id="estado" placeholder="Digite o seu estado"required>
+							<option value=""> </option>
+							<option value="Alagoas"> Alagoas </option>
+							<option value="Rio Grande do Norte"> Rio Grande do Norte </option>
+							<option value="Bahia"> Bahia </option>
+							<option value="Ceará"> Ceará </option>
+							<option value="Maranhão"> Maranhão </option>
+							<option value="Paraíba"> Paraíba </option>
+							<option value="Pernambuco"> Pernambuco </option>
+							<option value="Piauí"> Piauí </option>
+							<option value="Sergipe"> Sergipe </option>
+							<option value="Paraná"> Paraná </option>
+							<option value="Rio Grande do Sul"> Rio Grande do Sul </option>
+							<option value="Santa Catarina"> Santa Catarina </option>
+							<option value="Santa Catarina"> Santa Catarina </option>
+							<option value="São Paulo"> São Paulo </option>
+							<option value="Rio De Janeiro"> Rio De Janeiro </option>	
+						</select>
+						<br/>
+						<label for="cidade" class="form-label"> Selecione a sua cidade </label>
+						<select name="cidade" class="form-select" id="city" placeholder="Selecione sua cidade"required>
+							<option value=""> </option>
+							<option value="Natal">Natal </option>
+							<option value="Maceio">Maceio </option>
+							<option value="Salvador">Salvador </option> 
+							<option value="Fortaleza"> Fortaleza </option>
+							<option value="São Luís do Maranhão"> São Luís do Maranhão </option>
+							<option value="João Pessoa"> João Pessoa </option>
+							<option value="Recife"> Recife </option>
+							<option value="Teresinha"> Teresinha </option>
+							<option value="Aracaju"> Aracaju </option>
+							<option value="Curitiba"> Curitiba </option>
+							<option value="Porto Alegre"> Porto Alegre </option>
+							<option value="Foz do Iguaçu"> Foz do Iguaçu </option>
+							<option value="Florianópolis"> Florianópolis </option>
+							<option value="Joinville"> Joinville </option>
+							<option value="São Paulo"> São Paulo </option>
+							<option value="Rio De Janeiro"> Rio De Janeiro </option>
+						</select>
+						<br/>
+						<label for="motivo-contato" class="form-label"> Motivo Do Contato </label>
+						<select class="form-select" id="motivo-contato" placeholder="Motivo Do Contato">
+							<option> 	 </option>
+							<option> Compra Duplicada Na Fatura</option>
+							<option> A Compra Veio Errada </option>
+							<option> Faltou Algum Iten </option>
+							<option> A Embalagem Veio Aberta </option>
+							<option> Atraso Na Entrega </option>
+							<option> Produto Enviado Para o Endereço Errado </option>
+							<option> Produto Com Defeito </option>
+							<option> Codigo de Rastreio Incorreto </option>
+						</select>
+					<br/>
+					<label for="caixa-texto" class="form-label"> Digite Sua Mensagem </label>
+					<textarea class="form-control" id="caixaTexto" rows="3" placeholder="Digite Sua Mensagem"></textarea>
+					<br/>
+					<button type="submit" class="btn btn-primary btn-lg-dark" onclick="validarFormulario()"> Enviar </button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+		<footer id="rodape">
+		<hr>
+		<div class="container">
+			<div class="row">
+					<div class="col-4">
+						<img src="img/flamengologo.png" style="max-height: 100px;" style="max-width: 100px;">
+					</div>
+					<div class="col-4 text-center">
+						<ul class="nav justify-content-center">						
+							<li class="nav-item"><a class="nav-link text-muted"	href="#">inicio</a></li>
+							<li class="nav-item"><a class="nav-link text-muted"	href="#">contatos</a></li>
+							<li class="nav-item"><a class="nav-link text-muted"	href="#">sobre</a></li>
+							<li class="nav-item"><a class="nav-link text-muted"	href="#">noticias</a></li>
+						</ul>	
+					</div>
+					<div class="col-4 text-end">
+						<img src="img/twitter.png">
+						<img src="img/facebook.png">
+						<img src="img/instagram.png">
+					</div>
+			</div>
+		</div>
+	</footer>
 
 	<script type="text/javascript" src="res/bootstrap/js/bootstrap.min.js"></script>
 	
